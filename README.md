@@ -3,8 +3,6 @@ A simple yet powerful, self-hosted, real-time meeting room booking system built 
 
 The primary goal of this project is to provide a free and open-source alternative to expensive subscription-based services for small to medium-sized offices.
 
-<!-- TODO: Replace this with a link to your own screenshot -->
-
 🚀 Core Features
 Real-Time Updates: Any booking or cancellation made on one device is instantly reflected on all other connected clients.
 
@@ -27,7 +25,7 @@ Ensure you have Node.js and npm installed on your server. If not, you can instal
 sudo apt update
 sudo apt install nodejs npm -y
 
-2. Clone the Project
+2. Get the Project Files
 Clone this repository to your server:
 
 git clone [https://github.com/DualStackAdmin/Open-Source-Free-Scheduler.git](https://github.com/DualStackAdmin/Open-Source-Free-Scheduler.git)
@@ -36,17 +34,22 @@ cd Open-Source-Free-Scheduler
 3. Install Dependencies
 Once inside the project directory, install the required packages using npm:
 
-npm install express ws
+npm install
 
-4. Launch the Application
-When everything is set up, you can start the server with the following command:
+(This command will read package.json and install express and ws)
+
+4. Configure File Permissions
+This is a critical step to ensure the server can save booking data permanently. Run the following command to give the correct permissions to your user (e.g., ubuntu):
+
+# Replace 'ubuntu' with your actual username if it's different
+sudo chown -R ubuntu:ubuntu .
+
+5. Launch the Application
+Start the server with the following command:
 
 node server.js
 
-You should see the message Server is running at http://localhost:3000 in your terminal.
-
-5. Set Up Auto-Start (Recommended)
-To ensure the application starts automatically when the server reboots, you can create a systemd service. For a detailed guide, please refer to the project's WIKI.
+You should see the message Server is running at http://localhost:3000 in your terminal. For continuous operation, it is recommended to use a process manager like pm2 or systemd.
 
 💻 How to Use
 Main Display: http://YOUR_SERVER_IP:3000
@@ -57,6 +60,3 @@ Becoming an Admin: To gain admin privileges, open the app in your browser, go to
 
 📄 License
 This project is licensed under the MIT License. This means you are free to use, modify, and distribute this code for personal or commercial purposes. See the LICENSE file for more details.
-
-🙌 Contributing
-Contributions are welcome! If you'd like to help improve the project, feel free to submit a Pull Request. All suggestions are appreciated.
