@@ -23,7 +23,6 @@ Follow these steps to set up the system on your own local server (e.g., Ubuntu S
 Ensure you have Node.js and npm installed on your server. If not, you can install them with:
 
 sudo apt update
-
 sudo apt install nodejs npm -y
 
 2. Get the Project Files
@@ -49,15 +48,3 @@ sudo chown -R ubuntu:ubuntu .
 Start the server with the following command:
 
 node server.js
-
-You should see the message Server is running at http://localhost:3000 in your terminal. For continuous operation, it is recommended to use a process manager like pm2 or systemd.
-
-💻 How to Use
-Main Display: http://YOUR_SERVER_IP:3000
-
-Admin Panel: http://YOUR_SERVER_IP:3000/admin.html
-
-Becoming an Admin: To gain admin privileges, open the app in your browser, go to Developer Tools (F12) > Application > Local Storage, and change the value of meetingRoomUserId to turko.
-
-📄 License
-This project is licensed under the MIT License. This means you are free to use, modify, and distribute this code for personal or commercial purposes. See the LICENSE file for more details.
