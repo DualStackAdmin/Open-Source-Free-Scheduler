@@ -1,0 +1,43 @@
+{
+  "rooms": {
+    "buta": {
+      "name": "BUTA - Room",
+      "bookings": [
+        {
+          "id": "booking-1756197426372",
+          "title": "elxan test",
+          "userName": "elxan",
+          "startTime": "2025-08-26T13:35",
+          "endTime": "2025-08-26T13:40",
+          "userId": "user-zr2krlej6",
+          "pin": "1772"
+        },
+        {
+          "id": "booking-1756198626220",
+          "title": "TABLET TEST",
+          "userName": "rauf",
+          "startTime": "2025-08-26T14:56",
+          "endTime": "2025-08-26T15:56",
+          "userId": "user-w7uqicov7",
+          "pin": "3018"
+        }
+      ]
+    },
+    "garabagh": {
+      "name": "GARABAGH - Room",
+      "bookings": []
+    },
+    "khalcha": {
+      "name": "KHALCHA - Room",
+      "bookings": []
+    },
+    "khazar": {
+      "name": "KHAZAR - Room",
+      "bookings": []
+    },
+    "mugham": {
+      "name": "MUGHAM - Room",
+      "bookings": []
+    }
+  }
+}
