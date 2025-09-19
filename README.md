@@ -1,4 +1,5 @@
 Open-Source Free Scheduler
+
 A simple yet powerful, self-hosted, real-time meeting room booking system built with Node.js and WebSockets. This application is designed to run on tablets mounted at meeting room doors, displaying the current status and schedule.
 
 The primary goal of this project is to provide a free and open-source alternative to expensive subscription-based services for small to medium-sized offices.
