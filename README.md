@@ -75,7 +75,9 @@ WantedBy=multi-user.target
 c. Enable and start the service:
 
 sudo systemctl daemon-reload
+
 sudo systemctl start meeting-room
+
 sudo systemctl enable meeting-room
 
 d. Check the status: You can check if the service is running correctly with:
