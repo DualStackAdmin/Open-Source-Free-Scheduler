@@ -21,12 +21,14 @@ Follow these steps to set up the system on your own local server (e.g., Ubuntu S
 Ensure you have Node.js and npm installed on your server. If not, you can install them with:
 
 sudo apt update
+
 sudo apt install nodejs npm -y
 
 2. Get the Project Files
 Clone this repository to your server:
 
 git clone [https://github.com/DualStackAdmin/Open-Source-Free-Scheduler.git](https://github.com/DualStackAdmin/Open-Source-Free-Scheduler.git)
+
 cd Open-Source-Free-Scheduler
 
 3. Install Dependencies
